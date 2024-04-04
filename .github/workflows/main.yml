@@ -1,9 +1,12 @@
+name: CI
+
 on:
-    push:
+  push:
   
-  jobs:
-    test:
-      runs-on: ubuntu-latest
-      steps:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v3
-      - run: node code.test.js
+      - name: Run tests
+        run: node code.test.js
