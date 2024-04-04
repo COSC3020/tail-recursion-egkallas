@@ -19,3 +19,8 @@ Is the asymptotic complexity of tail-recursive Fibonacci different from the
 non-tail-recursive version? Why, or why not, and what is the complexity
 (worst-case $\Theta$)? Add your answer, including your reasoning, to this
 markdown file.
+
+The worst case asymptotic complexity of this tail-recursive Fibonacci is $\Theta(n)$ because the algorithm must 
+recurse $n$ times to provide the result and all other work within it is done in constant time. This implementation is 
+different from the recursive version in these constant factors because the recursive version has two recursive calls (adding constant factors)
+compared to the single recursive call in this version, but asymptotically they are the same. 
